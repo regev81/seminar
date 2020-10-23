@@ -1,3 +1,4 @@
+from Controller import Controller
 from Logger import logger, log_func
 
 
@@ -7,6 +8,7 @@ def test_func():
 
 
 def main():
+    controller = Controller()
     logger.info('line from logger')
     test_func()
     print('seminar bitch')
