@@ -14,8 +14,6 @@ class View(tk.Tk):
 
 
     def main(self):
-        #self._create_main_frame()
-        #self._create_example_button()
         self.mainloop()
 
     def _create_main_frame(self):
