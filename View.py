@@ -21,7 +21,7 @@ class View(tk.Tk):
         self.main_frm.pack()
 
     def _create_example_button(self):
-        text = 'example'
+        text = 'mmaaa'
         btn = tk.Button(self.main_frm, text=text, command=(
             lambda button=text: self.controller.on_button_click(button)
         ))
