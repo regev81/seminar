@@ -28,7 +28,7 @@ class Controller:
     def redo_clicked(self):
         print("redo_clicked")
         memento = self.care_taker.redo()
-        if (memento != None):
+        if memento != None:
             self.model.update_grid_by_memento(memento)
         self.update_grid()
         self.update_message()
@@ -37,7 +37,7 @@ class Controller:
     def undo_clicked(self):
         print("undo_clicked")
         memento = self.care_taker.undo()
-        if(memento != None):
+        if memento != None:
             self.model.update_grid_by_memento(memento)
         self.update_grid()
         self.update_message()
