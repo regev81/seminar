@@ -7,6 +7,7 @@ class Model:
         self.game_state = GAME_STATE_INACTIVE
         self.turn = None
         self.game_result = None
+        self.game_data_grid = None
 
         # initialize empty board
     def init_board(self):
@@ -17,11 +18,11 @@ class Model:
                 row_arr.append(EMPTY_SYMBOL)
             self.game_data_grid.append(row_arr)
 
-    # return true if it is a draw
-    def is_draw(self):
+    # return true if no step is available (all board cells have been chosen)
+    def is_full(self):
         for row in range(ROWS):
             for col in range(COLS):
-                if self.game_data_grid[row][col] != EMPTY_SYMBOL:
+                if self.game_data_grid[row][col] == EMPTY_SYMBOL:
                     return False
         return True
 
@@ -73,15 +74,15 @@ class Model:
 
     # check if end of game and return the winner if needed
     def update_game_state(self):
-        if self.is_draw():
-            self.game_state = GAME_STATE_OVER
-            self.game_result = GAME_RESULT_DRAW
-        elif self.is_winner(PLAYER1):
+        if self.is_winner(PLAYER1):
             self.game_state = GAME_STATE_OVER
             self.game_result = GAME_RESULT_WIN_PLAYER1
         elif self.is_winner(PLAYER2):
             self.game_state = GAME_STATE_OVER
             self.game_result = GAME_RESULT_WIN_PLAYER2
+        elif self.is_full():
+            self.game_state = GAME_STATE_OVER
+            self.game_result = GAME_RESULT_DRAW
         else:
             self.game_state = GAME_STATE_ACTIVE
 
