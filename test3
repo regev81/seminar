@@ -1,0 +1,9 @@
+from new.View import *
+
+def main():
+
+    view = View()
+    view.create_first_win()
+
+if __name__ == '__main__':
+    main()

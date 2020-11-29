@@ -1,17 +1,33 @@
-import tkinter as tk
 from tkinter import *
+import tk as tk
 from Constants import *
 
-
-class View(tk.Tk):
+class StartPage(tk.TK):
 
     def __init__(self,controller):
-        super().__init__()
         self.controller = controller
 
-        # create the UI
-        main_frame = Frame(self)
-        main_frame.pack(padx=10, pady=10)
+
+class View:
+
+    def __init__(self,controller):
+        self.controller = controller
+
+        # main window
+        main_window = None
+
+
+        # choose shapes window
+        shapes_frame = None
+
+        # game window
+        game_canvas = None
+
+        # add user window
+        add_user_window = None
+
+        self.create_main_window()
+        '''
         self.message = None
         self.game_buttons_grid = []
         self.game_symbols_grid = []
@@ -21,6 +37,17 @@ class View(tk.Tk):
         self.create_message_pane(main_frame)
         self.create_grid_pane(main_frame)
         self.create_buttons_pane(main_frame)
+        '''
+    # create main window
+    def create_main_window(self):
+        main_window = Frame(Tk)
+        main_window.pack(padx=10, pady=10)
+
+    # create the game board pane
+    def create_board_pane(self):
+        game_pane = Tk()
+        canvas = Canvas(game_pane, width=500, height=500)
+        canvas.pack(fill=BOTH, expand=YES)
 
     # create the top pane witch holds the message to the user
     def create_message_pane(self,main_frame):
