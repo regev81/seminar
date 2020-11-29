@@ -1,4 +1,6 @@
-from Controller2 import *
+from new.Controller import *
+from new.FileHandler import *
+
 
 def main():
 
