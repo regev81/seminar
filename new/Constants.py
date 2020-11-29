@@ -1,3 +1,4 @@
+import os
 
 PLAYER1 = "PLAYER1"
 PLAYER2 = "PLAYER2"
@@ -21,6 +22,8 @@ GAME_STATE_ACTIVE = "active"
 GAME_RESULT_DRAW = "draw"
 GAME_RESULT_WIN_PLAYER1 = "PLAYER1 win"
 GAME_RESULT_WIN_PLAYER2 = "PLAYER2 win"
-
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+RECORDS_FILE_NAME = "WinsRecords.txt"
+RECORDS_FILE_PATH = os.path.join(ROOT_DIR, RECORDS_FILE_NAME)
 ROWS = 3
 COLS = 3

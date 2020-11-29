@@ -1,7 +1,7 @@
 from GameCaretaker import *
 from GameMemento import *
 from Model import *
-from View import *
+from View2 import *
 
 class Controller:
 
@@ -10,9 +10,9 @@ class Controller:
         self.view = View(self)
         self.care_taker = None
 
+
     def main(self):
         self.view.main()
-
     # activated when game button clicked
     def grid_clicked(self,row,col):
         print(f"cell {row},{col} was clicked")
@@ -56,7 +56,7 @@ class Controller:
         self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
 
     # update the view game board by the model game grid
-    def update_grid(self):
+    def update_grid_old(self):
         for row in range(ROWS):
             for col in range(COLS):
                 if self.model.game_data_grid[row][col] == PLAYER1:
@@ -73,6 +73,26 @@ class Controller:
                     self.view.game_buttons_grid[row][col].config(state="active")
                     if self.model.game_state != GAME_STATE_ACTIVE:
                         self.view.game_buttons_grid[row][col].config(state="disabled")
+
+    # redraw the view game board by the model game grid
+    def redraw_game_board(self):
+        print('Clicked')
+        self.view.game_canvas.delete("all")
+        size = 3
+        cellwidth = int(self.view.game_canvas.winfo_width() / size)
+        cellheight = int(self.view.game_canvas.winfo_height() / size)
+        for column in range(size):
+            for row in range(size):
+                x1 = column * cellwidth
+                y1 = row * cellheight
+                x2 = x1 + cellwidth
+                y2 = y1 + cellheight
+                cell = self.view.game_canvas.create_rectangle(x1, y1, x2, y2, fill="white", tags=f"{row},{column}")
+                self.view.game_canvas.tag_bind(cell, '<ButtonPress-1>', self.grid_clicked)
+                squers[row, column] = cell
+                player = cells_grid[row, column]
+                if (player != None):
+                    draw_shape(canvas, player, x1, y1, cellwidth, cellheight)
 
     # update the state of the redo and undo buttons by the game state
     def update_redo_undo_buttons(self):
