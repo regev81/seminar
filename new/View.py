@@ -36,6 +36,7 @@ class View:
 
         root.mainloop()
 
+
     def create_new_game_page(self):
         height = 600
         width = 400
@@ -44,14 +45,25 @@ class View:
         root.title("New Game")
         self.new_game_page = Frame(root, height=height, width=width)
         self.new_game_page.pack()
-
         '''
          add gui for new_game_page
         '''
-
+        var = IntVar()
         # start game button
         start_game_but = Button(self.new_game_page, text="Start Game", command=self.controller.start_game_clicked)
         start_game_but.pack()
+        shape_game_but = Radiobutton(self.new_game_page, text=SHAPE_TRIANGLE, variable=var, value=4)
+        shape_game_but.pack()
+        shape_game_but = Radiobutton(self.new_game_page, text=SHAPE_RECTANGLE, variable=var, value=5)
+        shape_game_but.pack()
+        shape_game_but = Radiobutton(self.new_game_page, text=SHAPE_CIRCLE, variable=var, value=6)
+        shape_game_but.pack()
+        size_game_but = Radiobutton(self.new_game_page,text=SIZE_SMALL,variable=var,value=1)
+        size_game_but.pack()
+        size_game_but = Radiobutton(self.new_game_page,text=SIZE_MEDIUM,variable=var,value=2)
+        size_game_but.pack()
+        size_game_but = Radiobutton(self.new_game_page,text=SIZE_LARGE,variable=var,value=3)
+        size_game_but.pack()
 
     def create_game_board_page(self,game_data_grid,text_message):
         root = Toplevel()
