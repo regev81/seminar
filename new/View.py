@@ -40,6 +40,7 @@ class View:
         height = 600
         width = 400
         root = Toplevel()
+        root.wm_attributes("-topmost", 1)
         root.title("New Game")
         self.new_game_page = Frame(root, height=height, width=width)
         self.new_game_page.pack()
