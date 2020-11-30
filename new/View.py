@@ -19,6 +19,7 @@ class View:
         height = 500
         width = 500
         root = Tk()
+        root.wm_attributes("-topmost",1)
         root.title("Tic Tac Toe Menu")
         self.start_page = Frame(root, height=height, width=width)
         self.start_page.pack()
