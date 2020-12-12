@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Roy" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e60afcf5-1bbb-4b8b-9181-d61a14445fe5" name="Default Changelist" comment="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jKdQbxgcTAVQYs2nAJPZurSDHg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager" selected="Python.Controller">
+    <configuration name="Controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Controller.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="View" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="seminar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/View.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="seminar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/new" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="seminar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Controller" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.View" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e60afcf5-1bbb-4b8b-9181-d61a14445fe5" name="Default Changelist" comment="" />
+      <created>1603556702188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603556702188</updated>
+    </task>
+    <task id="LOCAL-00001" summary="ADD TOPMOST">
+      <created>1606718894323</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606718894323</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ADD TOPMOST LINE 22">
+      <created>1606718919734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606718919734</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43">
+      <created>1606720536800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606720536800</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43">
+      <created>1606729833284</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606729833284</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but">
+      <created>1606744330689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606744330689</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but">
+      <created>1607671233641</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607671233641</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADD TOPMOST" />
+    <MESSAGE value="ADD TOPMOST LINE 22" />
+    <MESSAGE value="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43" />
+    <MESSAGE value="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="383" y="165" key="#Notifications" timestamp="1604131212916">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="383" y="165" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1604131212916" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1606744281527">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1606744281527" />
+    <state width="1260" height="164" key="GridCell.Tab.0.bottom" timestamp="1607671621924">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1260" height="164" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607671621924" />
+    <state width="1260" height="164" key="GridCell.Tab.0.center" timestamp="1607671621923">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1260" height="164" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607671621923" />
+    <state width="1260" height="164" key="GridCell.Tab.0.left" timestamp="1607671621923">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1260" height="164" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607671621923" />
+    <state width="1260" height="164" key="GridCell.Tab.0.right" timestamp="1607671621923">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1260" height="164" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607671621923" />
+    <state x="161" y="37" key="MergeDialog" timestamp="1605339701380">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="161" y="37" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1605339701380" />
+    <state x="150" y="0" key="SettingsEditor" timestamp="1604131285826">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604131285826" />
+    <state x="93" y="93" width="1095" height="495" key="ShowDiffWithBranchDialog" timestamp="1604131568810">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="ShowDiffWithBranchDialog/0.0.1280.680@0.0.1280.680" timestamp="1604131568810" />
+    <state x="233" y="71" key="Vcs.Push.Dialog.v2" timestamp="1607671312393">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="71" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607671312393" />
+    <state x="459" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606718870612">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="459" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1606718870612" />
+    <state x="431" y="54" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605339696289">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="431" y="54" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.680@0.0.1280.680" timestamp="1605339696289" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606718918123">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606718918123" />
+  </component>
+</project>
