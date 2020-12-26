@@ -1,4 +1,5 @@
-from Controller2 import *
+from Controller import *
+
 
 def main():
 

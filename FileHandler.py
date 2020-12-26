@@ -1,4 +1,4 @@
-from new.Constants import *
+from Constants import *
 
 
 class FileHandler:
