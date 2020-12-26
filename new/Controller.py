@@ -1,3 +1,4 @@
+from new.FileHandler import FileHandler
 from new.GameCaretaker import *
 from new.GameMemento import *
 from new.Model import *
@@ -22,11 +23,11 @@ class Controller:
         self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
 
         # for testing
-        self.model.player1 = Player("tal",SHAPE_TRIANGLE,COLOR_RED,SIZE_SMALL)
-        self.model.player2 = Player("talya", SHAPE_CIRCLE, COLOR_BLUE, SIZE_LARGE)
+        self.model.player1 = Player("tal",Shape.TRIANGLE,Color.RED,Size.MEDIUM)
+        self.model.player2 = Player("talya", Shape.CIRCLE,Color.BLUE,Size.LARGE)
 
-    def add_user_clicked(self):
-        pass
+    def add_new_user_clicked(self):
+        self.view.create_new_user_page()
 
     def generate_report_clicked(self):
         pass
@@ -44,7 +45,7 @@ class Controller:
         print(f"resize occurred")
 
     def cell_clicked(self,event):
-        if self.view.game_board_canvas.find_withtag(CURRENT) and self.model.game_state == GAME_STATE_ACTIVE:
+        if self.view.game_board_canvas.find_withtag(CURRENT) and self.model.game_state.value == GameState.ACTIVE.value:
             tag = self.view.game_board_canvas.itemcget(CURRENT, "tags")
             row_column = re.split(',| ', tag)
             # row_column = tag.split(sep=',')
@@ -59,16 +60,32 @@ class Controller:
     # activated when redo button clicked
     def redo_clicked(self):
         print("redo_clicked")
-        memento = self.care_taker.redo()
-        if memento != None:
-            self.model.update_grid_by_memento(memento)
-        self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+        if(self.model.game_state.value == GameState.ACTIVE.value):
+            memento = self.care_taker.redo()
+            if memento != None:
+                self.model.update_grid_by_memento(memento)
+            self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
 
     # activated when undo button clicked
     def undo_clicked(self):
         print("undo_clicked")
-        memento = self.care_taker.undo()
-        if memento != None:
-            self.model.update_grid_by_memento(memento)
-        self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+        if (self.model.game_state.value == GameState.ACTIVE.value):
+            memento = self.care_taker.undo()
+            if memento != None:
+                self.model.update_grid_by_memento(memento)
+            self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+
+    def insert_new_user_clicked(self):
+        name_entered = self.view.new_user_entry_str.get()
+        insert_user_result = self.model.check_new_user_name(name_entered)
+        message = None
+        if insert_user_result == InsertNewUserResulr.INSERT_NEW_USER_RESULT_INVALID:
+            message = f"Invalid name !!"
+        elif insert_user_result == InsertNewUserResulr.INSERT_NEW_USER_RESULT_USER_EXISTS:
+            message = f"User {name_entered} exists, choose a different name"
+        else:
+            message = f"User {name_entered} was added successfully"
+            FileHandler.add_new_user_to_file(name_entered)
+
+        self.view.new_user_add_error_label_str.set(message)
 
