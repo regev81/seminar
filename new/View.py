@@ -38,6 +38,7 @@ class View:
         root.geometry(f"{width}x{height}")
         root.resizable(width=False, height=False)
         root.title("Tic Tac Toe Menu")
+        root.wm_attributes("-topmost", 1)
         self.start_page = Frame(root)
         self.start_page.pack(pady = 5)
 
@@ -66,6 +67,7 @@ class View:
         root.geometry(f"{width}x{height}")
         root.resizable(width=False, height=False)
         root.title("New Game")
+        root.wm_attributes("-topmost", 1)
         self.new_game_page = Frame(root)
         self.new_game_page.pack()
 
