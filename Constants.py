@@ -1,26 +1,43 @@
+import os
+from enum import Enum
 
-PLAYER1 = "PLAYER1"
-PLAYER2 = "PLAYER2"
-SHAPE_TRIANGLE = "triangle"
-SHAPE_RECTANGLE = "rectangle"
-SHAPE_CIRCLE = "circle"
-COLOR_BLACK = "black"
-COLOR_BLUE = "blue"
-COLOR_RED = "red"
-SIZE_LARGE = "large"
-SIZE_MEDIUM = "medium"
-SIZE_SMALL = "small"
-PLAYER1_SYMBOL = "X"
-PLAYER2_SYMBOL = "O"
-EMPTY_SYMBOL = ""
-PLAYER1_COLOR = "Blue"
-PLAYER2_COLOR = "Red"
-GAME_STATE_INACTIVE = "inactive"
-GAME_STATE_OVER = "over"
-GAME_STATE_ACTIVE = "active"
-GAME_RESULT_DRAW = "draw"
-GAME_RESULT_WIN_PLAYER1 = "PLAYER1 win"
-GAME_RESULT_WIN_PLAYER2 = "PLAYER2 win"
 
+class Color(Enum):
+    RED = "RED"
+    GREEN = "GREEN"
+    BLUE = "BLUE"
+
+
+class Shape(Enum):
+    RECTANGLE = "RECTANGLE"
+    CIRCLE = "CIRCLE"
+    TRIANGLE = "TRIANGLE"
+
+
+class Size(Enum):
+    LARGE = "LARGE"
+    MEDIUM = "MEDIUM"
+    SMALL = "SMALL"
+
+
+class GameState(Enum):
+    INACTIVE = "INACTIVE"
+    OVER = "OVER"
+    ACTIVE = "ACTIVE"
+
+
+class GameResult(Enum):
+    DRAW = "DRAW"
+    PLAYER1_WIN = "PLAYER1_WIN"
+    PLAYER2_WIN = "PLAYER2_WIN"
+
+class InsertNewUserResulr(Enum):
+    INSERT_NEW_USER_RESULT_INVALID = "INSERT_NEW_USER_RESULT_INVALID"
+    INSERT_NEW_USER_RESULT_USER_EXISTS = "INSERT_NEW_USER_RESULT_USER_EXISTS"
+
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+RECORDS_FILE_NAME = "WinsRecords.txt"
+RECORDS_FILE_PATH = os.path.join(ROOT_DIR, RECORDS_FILE_NAME)
 ROWS = 3
 COLS = 3

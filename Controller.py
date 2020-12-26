@@ -1,7 +1,9 @@
+from FileHandler import FileHandler
 from GameCaretaker import *
 from GameMemento import *
 from Model import *
-from View2 import *
+from Player import *
+from View import *
 
 class Controller:
 
@@ -10,112 +12,80 @@ class Controller:
         self.view = View(self)
         self.care_taker = None
 
-
     def main(self):
         self.view.main()
-    # activated when game button clicked
-    def grid_clicked(self,row,col):
-        print(f"cell {row},{col} was clicked")
 
-        self.model.move(row, col)
-        self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
-        self.update_grid()
-        self.update_message()
-        self.update_redo_undo_buttons()
-
-
-    # activated when redo button clicked
-    def redo_clicked(self):
-        print("redo_clicked")
-        memento = self.care_taker.redo()
-        if memento != None:
-            self.model.update_grid_by_memento(memento)
-        self.update_grid()
-        self.update_message()
-
-    # activated when undo button clicked
-    def undo_clicked(self):
-        print("undo_clicked")
-        memento = self.care_taker.undo()
-        if memento != None:
-            self.model.update_grid_by_memento(memento)
-        self.update_grid()
-        self.update_message()
-
-    # activated when new game button clicked
     def new_game_clicked(self):
-        print("new_game")
-        self.view.enable_grid_buttons()
-        self.model.new_game()
-        self.update_grid()
-        self.update_message()
-        self.update_redo_undo_buttons()
+        self.view.create_new_game_page()
 
         # create GameCaretaker and first memento
         self.care_taker = GameCaretaker()
         self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
 
-    # update the view game board by the model game grid
-    def update_grid_old(self):
-        for row in range(ROWS):
-            for col in range(COLS):
-                if self.model.game_data_grid[row][col] == PLAYER1:
-                      self.view.game_symbols_grid[row][col].set(PLAYER1_SYMBOL)
-                      self.view.game_buttons_grid[row][col].config(bg=PLAYER1_COLOR)
-                      self.view.game_buttons_grid[row][col].config(state="disabled")
-                elif self.model.game_data_grid[row][col] == PLAYER2:
-                    self.view.game_symbols_grid[row][col].set(PLAYER2_SYMBOL)
-                    self.view.game_buttons_grid[row][col].config(bg=PLAYER2_COLOR)
-                    self.view.game_buttons_grid[row][col].config(state="disabled")
-                else:
-                    self.view.game_symbols_grid[row][col].set(EMPTY_SYMBOL)
-                    self.view.game_buttons_grid[row][col].config(bg="SystemButtonFace")
-                    self.view.game_buttons_grid[row][col].config(state="active")
-                    if self.model.game_state != GAME_STATE_ACTIVE:
-                        self.view.game_buttons_grid[row][col].config(state="disabled")
+        # for testing
+        self.model.player1 = Player("tal",Shape.TRIANGLE,Color.RED,Size.MEDIUM)
+        self.model.player2 = Player("talya", Shape.CIRCLE,Color.BLUE,Size.LARGE)
 
-    # redraw the view game board by the model game grid
-    def redraw_game_board(self):
-        print('Clicked')
-        self.view.game_canvas.delete("all")
-        size = 3
-        cellwidth = int(self.view.game_canvas.winfo_width() / size)
-        cellheight = int(self.view.game_canvas.winfo_height() / size)
-        for column in range(size):
-            for row in range(size):
-                x1 = column * cellwidth
-                y1 = row * cellheight
-                x2 = x1 + cellwidth
-                y2 = y1 + cellheight
-                cell = self.view.game_canvas.create_rectangle(x1, y1, x2, y2, fill="white", tags=f"{row},{column}")
-                self.view.game_canvas.tag_bind(cell, '<ButtonPress-1>', self.grid_clicked)
-                squers[row, column] = cell
-                player = cells_grid[row, column]
-                if (player != None):
-                    draw_shape(canvas, player, x1, y1, cellwidth, cellheight)
+    def add_new_user_clicked(self):
+        self.view.create_new_user_page()
 
-    # update the state of the redo and undo buttons by the game state
-    def update_redo_undo_buttons(self):
-        if self.model.game_state != GAME_STATE_ACTIVE:
-            self.view.redo_button.config(state="disabled")
-            self.view.undo_button.config(state="disabled")
+    def generate_report_clicked(self):
+        pass
+
+    def start_game_clicked(self):
+        self.model.start_new_game()
+        self.view.create_game_board_page(self.model.game_data_grid,self.model.game_board_message)
+
+        # create GameCaretaker and first memento
+        self.care_taker = GameCaretaker()
+        self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
+
+    def on_resize(self,event):
+        self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+        print(f"resize occurred")
+
+    def cell_clicked(self,event):
+        if self.view.game_board_canvas.find_withtag(CURRENT) and self.model.game_state.value == GameState.ACTIVE.value:
+            tag = self.view.game_board_canvas.itemcget(CURRENT, "tags")
+            row_column = re.split(',| ', tag)
+            # row_column = tag.split(sep=',')
+            row = int(row_column[0])
+            column = int(row_column[1])
+
+            self.model.move(row,column)
+            self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
+            self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+            print(f"cell {row},{column} was clicked")
+
+    # activated when redo button clicked
+    def redo_clicked(self):
+        print("redo_clicked")
+        if(self.model.game_state.value == GameState.ACTIVE.value):
+            memento = self.care_taker.redo()
+            if memento != None:
+                self.model.update_grid_by_memento(memento)
+            self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+
+    # activated when undo button clicked
+    def undo_clicked(self):
+        print("undo_clicked")
+        if (self.model.game_state.value == GameState.ACTIVE.value):
+            memento = self.care_taker.undo()
+            if memento != None:
+                self.model.update_grid_by_memento(memento)
+            self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+
+    def insert_new_user_clicked(self):
+        name_entered = self.view.new_user_entry_str.get()
+        insert_user_result = self.model.check_new_user_name(name_entered)
+        message = None
+        if insert_user_result == InsertNewUserResulr.INSERT_NEW_USER_RESULT_INVALID:
+            message = f"Invalid name !!"
+        elif insert_user_result == InsertNewUserResulr.INSERT_NEW_USER_RESULT_USER_EXISTS:
+            message = f"User {name_entered} exists, choose a different name"
         else:
-            self.view.redo_button.config(state="active")
-            self.view.undo_button.config(state="active")
+            message = f"User {name_entered} was added successfully"
+            FileHandler.add_new_user_to_file(name_entered)
 
-    # update the message to the user by the game state and result
-    def update_message(self):
-        # game over
-        if self.model.game_state == GAME_STATE_OVER:
-            if self.model.game_result == GAME_RESULT_DRAW:
-                message = "Game over, it is a draw"
-            elif self.model.game_result == GAME_RESULT_WIN_PLAYER1:
-                message = "PLAYER1 is the winner !!!"
-            else:
-                message = "PLAYER2 is the winner !!!"
-        # game continue
-        else:
-            message = f"{self.model.turn} turn..."
-
-        self.view.message.set(message)
+        self.view.new_user_add_error_label_str.set(message)
 

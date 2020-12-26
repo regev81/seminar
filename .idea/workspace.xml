@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad0faaf4-4c2b-4046-92a1-3149d8a3ca59" name="Default Changelist" comment="">
+    <list default="true" id="ad0faaf4-4c2b-4046-92a1-3149d8a3ca59" name="Default Changelist" comment="שערשעכגע">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/Constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/FileHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/FileHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/View.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/View.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/WinsRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/new/WinsRecords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameMemento.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameMemento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View.py" beforeDir="false" afterPath="$PROJECT_DIR$/View.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/Constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/Controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/FileHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/GameCaretaker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/GameMemento.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/Model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/Player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/View.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/WinsRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WinsRecords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Roy/dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,14 +59,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/new" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Git\GitSeminar" />
       <recent name="C:\Git\GitSeminar\new" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GitSeminar" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.test3" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test2" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +277,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607793567539</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add enums">
+      <created>1608972601537</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608972601537</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add enums">
+      <created>1608974515348</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608974515348</updated>
+    </task>
+    <task id="LOCAL-00013" summary="שערשעכגע">
+      <created>1608974570477</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608974570477</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,7 +325,9 @@
     <MESSAGE value="new gui" />
     <MESSAGE value="add wins records file" />
     <MESSAGE value="bla" />
-    <option name="LAST_COMMIT_MESSAGE" value="bla" />
+    <MESSAGE value="add enums" />
+    <MESSAGE value="שערשעכגע" />
+    <option name="LAST_COMMIT_MESSAGE" value="שערשעכגע" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606650766874">
@@ -303,41 +342,47 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="395" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1603461080924" />
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603530798527">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1363" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608974749833">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603530798527" />
+    <state x="-1363" y="141" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974749833" />
     <state x="641" y="67" width="607" height="594" key="#xdebugger.evaluate" timestamp="1608823803782">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="641" y="67" width="607" height="594" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1608823803782" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1607793567159">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1524" y="85" width="1265" height="815" key="CommitChangelistDialog2" timestamp="1608974709128">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607793567159" />
+    <state x="-1524" y="85" width="1265" height="815" key="CommitChangelistDialog2/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974709128" />
     <state width="794" height="438" key="DebuggerActiveHint" timestamp="1608823425577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="794" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1608823425577" />
-    <state width="1899" height="42" key="GridCell.Tab.0.bottom" timestamp="1608972176373">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1608974935810">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state width="1259" height="77" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974935810" />
     <state width="1899" height="42" key="GridCell.Tab.0.bottom/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176373" />
-    <state width="1899" height="42" key="GridCell.Tab.0.center" timestamp="1608972176372">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1608974935810">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state width="1259" height="77" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="276" key="GridCell.Tab.0.center/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974935810" />
     <state width="1899" height="42" key="GridCell.Tab.0.center/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176372" />
-    <state width="1899" height="42" key="GridCell.Tab.0.left" timestamp="1608972176372">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1608974935810">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state width="1259" height="77" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="276" key="GridCell.Tab.0.left/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974935810" />
     <state width="1899" height="42" key="GridCell.Tab.0.left/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176372" />
-    <state width="1899" height="42" key="GridCell.Tab.0.right" timestamp="1608972176373">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1608974935810">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state width="1259" height="77" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974935810" />
     <state width="1899" height="42" key="GridCell.Tab.0.right/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176373" />
     <state width="1259" height="77" key="GridCell.Tab.1.bottom" timestamp="1608831125234">
       <screen x="0" y="0" width="1280" height="680" />
@@ -355,14 +400,20 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1259" height="77" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
-    <state x="354" y="56" key="MultipleFileMergeDialog" timestamp="1607793599087">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1389" y="94" key="MultipleFileMergeDialog" timestamp="1608972753993">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state x="354" y="56" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1607793599087" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607793210535">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1389" y="94" key="MultipleFileMergeDialog/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608972753993" />
+    <state x="-1459" y="170" key="SettingsEditor" timestamp="1608974328271">
+      <screen x="-1920" y="8" width="1920" height="1040" />
+    </state>
+    <state x="-1459" y="170" key="SettingsEditor/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974328271" />
+    <state x="-1570" y="120" key="Vcs.Push.Dialog.v2" timestamp="1608974587841">
+      <screen x="-1920" y="8" width="1920" height="1040" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607793210535" />
+    <state x="-1570" y="120" key="Vcs.Push.Dialog.v2/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@-1920.8.1920.1040" timestamp="1608974587841" />
     <state x="506" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1608971520983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -381,41 +432,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GameCaretaker.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/View2.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/View2.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/new/Controller.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/new/FileHandler.py</url>
           <line>48</line>
