@@ -1,10 +1,11 @@
 from new.Constants import *
+from new.FileHandler import FileHandler
 
 
 class Model:
 
     def __init__(self):
-        self.game_state = GAME_STATE_INACTIVE
+        self.game_state = GameState.INACTIVE
         self.turn = None
         self.game_result = None
         self.game_data_grid = {}
@@ -17,7 +18,7 @@ class Model:
         self.init_board()
         self.turn = self.player1
         self.game_board_message = f"{self.turn.name} turn..."
-        self.game_state = GAME_STATE_ACTIVE
+        self.game_state = GameState.ACTIVE
         self.game_result = ""
 
     # initialize empty board
@@ -82,25 +83,25 @@ class Model:
 
         # check end game
         self.update_game_state()
-        if self.game_state == GAME_STATE_ACTIVE:
+        if self.game_state == GameState.ACTIVE:
             # update turn
             self.switch_player()
 
     def update_game_state(self):
         if self.is_winner(self.player1):
-            self.game_state = GAME_STATE_OVER
-            self.game_result = GAME_RESULT_WIN_PLAYER1
+            self.game_state = GameState.OVER
+            self.game_result = GameResult.PLAYER1_WIN
             self.game_board_message = f"{self.player1.name} is the winner !!"
         elif self.is_winner(self.player2):
-            self.game_state = GAME_STATE_OVER
-            self.game_result = GAME_RESULT_WIN_PLAYER2
+            self.game_state = GameState.OVER
+            self.game_result = GameResult.PLAYER2_WIN
             self.game_board_message = f"{self.player2.name} is the winner !!"
         elif self.is_full():
-            self.game_state = GAME_STATE_OVER
-            self.game_result = GAME_RESULT_DRAW
+            self.game_state = GameState.OVER
+            self.game_result = GameResult.DRAW
             self.game_board_message = f"It is a draw"
         else:
-            self.game_state = GAME_STATE_ACTIVE
+            self.game_state = GameState.ACTIVE
 
     def switch_player(self):
         if self.turn == self.player1:
@@ -113,4 +114,10 @@ class Model:
     def update_grid_by_memento(self,memento):
         for key, value in memento.game_data_grid.items():
             self.game_data_grid[key] = value
+
+    def check_new_user_name(self,user_name):
+        if FileHandler.user_name_exists_in_file(user_name):
+            return InsertNewUserResulr.INSERT_NEW_USER_RESULT_USER_EXISTS
+        else:
+            return InsertNewUserResulr.INSERT_NEW_USER_RESULT_INVALID
 

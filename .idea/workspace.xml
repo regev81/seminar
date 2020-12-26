@@ -1,41 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:Roy" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e60afcf5-1bbb-4b8b-9181-d61a14445fe5" name="Default Changelist" comment="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but" />
+    <list default="true" id="ad0faaf4-4c2b-4046-92a1-3149d8a3ca59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/Constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/FileHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/FileHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/View.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/View.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new/WinsRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/new/WinsRecords.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -45,60 +30,31 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1jKdQbxgcTAVQYs2nAJPZurSDHg" />
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Git\GitSeminar\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jE0SlyIxws40fZjAuxrOsofDbx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/new" />
   </component>
-  <component name="RunManager" selected="Python.Controller">
-    <configuration name="Controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Controller.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="View" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="seminar" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/View.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="seminar" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Git\GitSeminar\new" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GitSeminar" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -118,8 +74,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="seminar" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GitSeminar" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -139,68 +95,173 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GitSeminar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GitSeminar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GitSeminar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Controller" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.test3" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.View" />
-        <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e60afcf5-1bbb-4b8b-9181-d61a14445fe5" name="Default Changelist" comment="" />
-      <created>1603556702188</created>
+      <changelist id="ad0faaf4-4c2b-4046-92a1-3149d8a3ca59" name="Default Changelist" comment="" />
+      <created>1603353945127</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603556702188</updated>
+      <updated>1603353945127</updated>
     </task>
-    <task id="LOCAL-00001" summary="ADD TOPMOST">
-      <created>1606718894323</created>
+    <task id="LOCAL-00001" summary="set up logger and Constants.py">
+      <created>1603358742761</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1606718894323</updated>
+      <updated>1603358742761</updated>
     </task>
-    <task id="LOCAL-00002" summary="ADD TOPMOST LINE 22">
-      <created>1606718919734</created>
+    <task id="LOCAL-00002" summary="add model view controller and memento base">
+      <created>1603473178007</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1606718919734</updated>
+      <updated>1603473178007</updated>
     </task>
-    <task id="LOCAL-00003" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43">
-      <created>1606720536800</created>
+    <task id="LOCAL-00003" summary="add base gui">
+      <created>1603532036122</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1606720536800</updated>
+      <updated>1603532036122</updated>
     </task>
-    <task id="LOCAL-00004" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43">
-      <created>1606729833284</created>
+    <task id="LOCAL-00004" summary="remove logs folder">
+      <created>1603554676844</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1606729833284</updated>
+      <updated>1603554676844</updated>
     </task>
-    <task id="LOCAL-00005" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but">
-      <created>1606744330689</created>
+    <task id="LOCAL-00005" summary="add function to Model.py">
+      <created>1603958487958</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1606744330689</updated>
+      <updated>1603958487958</updated>
     </task>
-    <task id="LOCAL-00006" summary="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but">
-      <created>1607671233641</created>
+    <task id="LOCAL-00006" summary="add the memento to the game">
+      <created>1604757448326</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1607671233641</updated>
+      <updated>1604757448326</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix draw">
+      <created>1605460732694</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605460732694</updated>
+    </task>
+    <task id="LOCAL-00008" summary="new gui">
+      <created>1606653451045</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606653451045</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add wins records file">
+      <created>1607793196581</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607793196581</updated>
+    </task>
+    <task id="LOCAL-00010" summary="bla">
+      <created>1607793567539</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607793567539</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,83 +270,172 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ADD TOPMOST" />
-    <MESSAGE value="ADD TOPMOST LINE 22" />
-    <MESSAGE value="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43" />
-    <MESSAGE value="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD TOPMOST LINE 22&#10;ADD TOPMOST LINE 43&#10;ADD shape_game_but,size_game_but" />
+    <MESSAGE value="set up logger and Constants.py" />
+    <MESSAGE value="add model view controller and memento base" />
+    <MESSAGE value="add base gui" />
+    <MESSAGE value="remove logs folder" />
+    <MESSAGE value="add function to Model.py" />
+    <MESSAGE value="add the memento to the game" />
+    <MESSAGE value="fix draw" />
+    <MESSAGE value="new gui" />
+    <MESSAGE value="add wins records file" />
+    <MESSAGE value="bla" />
+    <option name="LAST_COMMIT_MESSAGE" value="bla" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="383" y="165" key="#Notifications" timestamp="1604131212916">
+    <state x="414" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606650766874">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="383" y="165" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1604131212916" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1606744281527">
+    <state x="414" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1606650766874" />
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1604131426663">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1606744281527" />
-    <state width="1260" height="164" key="GridCell.Tab.0.bottom" timestamp="1607671621924">
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604131426663" />
+    <state x="395" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603461080924">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607671621924" />
-    <state width="1260" height="164" key="GridCell.Tab.0.center" timestamp="1607671621923">
+    <state x="395" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1603461080924" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603530798527">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607671621923" />
-    <state width="1260" height="164" key="GridCell.Tab.0.left" timestamp="1607671621923">
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603530798527" />
+    <state x="641" y="67" width="607" height="594" key="#xdebugger.evaluate" timestamp="1608823803782">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607671621923" />
-    <state width="1260" height="164" key="GridCell.Tab.0.right" timestamp="1607671621923">
+    <state x="641" y="67" width="607" height="594" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1608823803782" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1607793567159">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="164" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607671621923" />
-    <state x="161" y="37" key="MergeDialog" timestamp="1605339701380">
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607793567159" />
+    <state width="794" height="438" key="DebuggerActiveHint" timestamp="1608823425577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="161" y="37" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1605339701380" />
-    <state x="150" y="0" key="SettingsEditor" timestamp="1604131285826">
+    <state width="794" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1608823425577" />
+    <state width="1899" height="42" key="GridCell.Tab.0.bottom" timestamp="1608972176373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="77" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="42" key="GridCell.Tab.0.bottom/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176373" />
+    <state width="1899" height="42" key="GridCell.Tab.0.center" timestamp="1608972176372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="77" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="42" key="GridCell.Tab.0.center/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176372" />
+    <state width="1899" height="42" key="GridCell.Tab.0.left" timestamp="1608972176372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="77" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="42" key="GridCell.Tab.0.left/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176372" />
+    <state width="1899" height="42" key="GridCell.Tab.0.right" timestamp="1608972176373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="77" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1899" height="42" key="GridCell.Tab.0.right/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972176373" />
+    <state width="1259" height="77" key="GridCell.Tab.1.bottom" timestamp="1608831125234">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604131285826" />
-    <state x="93" y="93" width="1095" height="495" key="ShowDiffWithBranchDialog" timestamp="1604131568810">
+    <state width="1259" height="77" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1259" height="77" key="GridCell.Tab.1.center" timestamp="1608831125234">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="ShowDiffWithBranchDialog/0.0.1280.680@0.0.1280.680" timestamp="1604131568810" />
-    <state x="233" y="71" key="Vcs.Push.Dialog.v2" timestamp="1607671312393">
+    <state width="1259" height="77" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1259" height="77" key="GridCell.Tab.1.left" timestamp="1608831125234">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="71" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607671312393" />
-    <state x="459" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606718870612">
+    <state width="1259" height="77" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state width="1259" height="77" key="GridCell.Tab.1.right" timestamp="1608831125234">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="459" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1606718870612" />
-    <state x="431" y="54" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605339696289">
+    <state width="1259" height="77" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1608831125234" />
+    <state x="354" y="56" key="MultipleFileMergeDialog" timestamp="1607793599087">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="431" y="54" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.680@0.0.1280.680" timestamp="1605339696289" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606718918123">
+    <state x="354" y="56" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1607793599087" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607793210535">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606718918123" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607793210535" />
+    <state x="506" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1608971520983">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1608822251813" />
+    <state x="506" y="251" key="com.intellij.ide.util.TipDialog/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608971520983" />
+    <state x="245" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604180328038">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="245" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1604180328038" />
+    <state x="501" y="118" width="918" height="805" key="find.popup" timestamp="1608972194531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="77" width="612" height="526" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1608221100838" />
+    <state x="501" y="118" width="918" height="805" key="find.popup/1920.-216.1280.693/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608972194531" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GameCaretaker.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/View2.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/View2.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/new/Controller.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/new/FileHandler.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.memento_list" language="Python" />
+        <watch expression="self.model.game_state" language="Python" />
+        <watch expression="GameState.ACTIVE" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
