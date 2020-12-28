@@ -23,6 +23,7 @@ class Size(Enum):
 class GameState(Enum):
     INACTIVE = "INACTIVE"
     OVER = "OVER"
+    CHOOSE_PLAYERS_DETAILS = "PREGAME"
     ACTIVE = "ACTIVE"
 
 
@@ -31,9 +32,12 @@ class GameResult(Enum):
     PLAYER1_WIN = "PLAYER1_WIN"
     PLAYER2_WIN = "PLAYER2_WIN"
 
-class InsertNewUserResulr(Enum):
-    INSERT_NEW_USER_RESULT_INVALID = "INSERT_NEW_USER_RESULT_INVALID"
-    INSERT_NEW_USER_RESULT_USER_EXISTS = "INSERT_NEW_USER_RESULT_USER_EXISTS"
+class Error(Enum):
+    PLAYERS_SAME_NAME = "Choose different name for each player"
+    PLAYERS_SAME_ATTRIBUTES = "Change Shape/Color/Size, The 2 players must have al least 1 different attribute"
+    EMPTY_ATTRIBUTE = "Some attributes are missing"
+    USER_EXISTS = "User Exists in file"
+
 
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))

@@ -5,7 +5,7 @@ from FileHandler import FileHandler
 class Model:
 
     def __init__(self):
-        self.game_state = GameState.INACTIVE
+        self.game_state = GameState.INACTIVE.value
         self.turn = None
         self.game_result = None
         self.game_data_grid = {}
@@ -18,7 +18,7 @@ class Model:
         self.init_board()
         self.turn = self.player1
         self.game_board_message = f"{self.turn.name} turn..."
-        self.game_state = GameState.ACTIVE
+        self.game_state = GameState.ACTIVE.value
         self.game_result = ""
 
     # initialize empty board
@@ -30,10 +30,9 @@ class Model:
     # return true if no step is available (all board cells have been chosen)
     def is_full(self):
 
-        for key,  value in self.game_data_grid.items():
-            for col in range(COLS):
-                if value:
-                    return False
+        for key, value in self.game_data_grid.items():
+            if value is None:
+                return False
         return True
 
     # return true if the player is the winner
@@ -83,25 +82,25 @@ class Model:
 
         # check end game
         self.update_game_state()
-        if self.game_state == GameState.ACTIVE:
+        if self.game_state == GameState.ACTIVE.value:
             # update turn
             self.switch_player()
 
     def update_game_state(self):
         if self.is_winner(self.player1):
-            self.game_state = GameState.OVER
-            self.game_result = GameResult.PLAYER1_WIN
+            self.game_state = GameState.OVER.value
+            self.game_result = GameResult.PLAYER1_WIN.value
             self.game_board_message = f"{self.player1.name} is the winner !!"
         elif self.is_winner(self.player2):
-            self.game_state = GameState.OVER
-            self.game_result = GameResult.PLAYER2_WIN
+            self.game_state = GameState.OVER.value
+            self.game_result = GameResult.PLAYER2_WIN.value
             self.game_board_message = f"{self.player2.name} is the winner !!"
         elif self.is_full():
-            self.game_state = GameState.OVER
-            self.game_result = GameResult.DRAW
+            self.game_state = GameState.OVER.value
+            self.game_result = GameResult.DRAW.value
             self.game_board_message = f"It is a draw"
         else:
-            self.game_state = GameState.ACTIVE
+            self.game_state = GameState.ACTIVE.value
 
     def switch_player(self):
         if self.turn == self.player1:
@@ -115,9 +114,25 @@ class Model:
         for key, value in memento.game_data_grid.items():
             self.game_data_grid[key] = value
 
-    def check_new_user_name(self,user_name):
-        if FileHandler.user_name_exists_in_file(user_name):
-            return InsertNewUserResulr.INSERT_NEW_USER_RESULT_USER_EXISTS
+    # return the correct error if the players are not valid.
+    # return empty string if the players are valid
+    def players_valid(self,player1,player2):
+        if self.empty_attribute_exists(player1) or self.empty_attribute_exists(player2):
+            return Error.EMPTY_ATTRIBUTE.value
+        elif player1.name == player2.name:
+            return Error.PLAYERS_SAME_NAME.value
+        elif player1.shape == player2.shape and player1.color == player2.color and player1.size == player2.size:
+            return Error.PLAYERS_SAME_ATTRIBUTES.value
         else:
-            return InsertNewUserResulr.INSERT_NEW_USER_RESULT_INVALID
+            return ""
+
+    # return true if player got an invalid attribute (empty string)
+    def empty_attribute_exists(self,player):
+        player_attributes = vars(player)
+        for val in player_attributes.values():
+            if(val == ""):
+                return True
+
+        return False
+
 
