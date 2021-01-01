@@ -234,16 +234,3 @@ class View:
 
     def show_error(self,error_msg):
         messagebox.showerror("Error", error_msg)
-
-    def show_report(self, str_to_print):
-        lable_font = Font(family="Helvetica", size=15)
-        root = Toplevel()
-        # root.geometry(f"{width}x{height}")
-        # root.resizable(width=False, height=False)
-        root.title("Report")
-        root.wm_attributes("-topmost", 1)
-        report = Frame(root)
-        report.pack()
-        report_label = Label(report, text=str_to_print, font=lable_font)
-        report_label.pack()
-        report_label.pack_propagate(0)

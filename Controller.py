@@ -3,7 +3,7 @@ from GameMemento import *
 from Model import *
 from Player import *
 from View import *
-import operator
+
 
 class Controller:
 
@@ -106,10 +106,3 @@ class Controller:
         else:
             FileHandler.add_new_user_to_file(name_entered)
             self.view.new_user_add_error_label_str.set(f"User {name_entered} successfully added to file")
-
-    def generate_report_clicked(self):
-        users_wins = FileHandler.get_all_users_and_wins()
-        sort_users_wins = sorted(users_wins.items(), key=operator.itemgetter(1), reverse=True)
-        str_to_print = ""
-        for item in sort_users_wins: str_to_print = str_to_print + item[0] + ' : ' + str(item[1]) + "\n"
-        self.view.show_report(str_to_print)

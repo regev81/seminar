@@ -5,12 +5,10 @@ Tal
 aa
 0
 ss
-14
+0
 aaa
 0
-Matan
-3
+
+0
 s
-7
-Tzuf
-6
+0
