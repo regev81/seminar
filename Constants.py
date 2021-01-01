@@ -37,6 +37,7 @@ class Error(Enum):
     PLAYERS_SAME_ATTRIBUTES = "Change Shape/Color/Size, The 2 players must have al least 1 different attribute"
     EMPTY_ATTRIBUTE = "Some attributes are missing"
     USER_EXISTS = "User Exists in file"
+    EMPTY_NAME = "User Name can not be empty"
 
 
 

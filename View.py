@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import font, messagebox
 from tkinter.font import Font
-from tkinter.ttk import Combobox
+from tkinter.ttk import Combobox, Treeview, Style
 
 from Constants import Size, Shape, Color
 
@@ -39,6 +39,7 @@ class View:
         root.resizable(width=False, height=False)
         root.title("Tic Tac Toe Menu")
         root.wm_attributes("-topmost", 1)
+        root.focus()
         self.start_page = Frame(root)
         self.start_page.pack(pady = 5)
 
@@ -66,6 +67,7 @@ class View:
         root = Toplevel()
         root.geometry(f"{width}x{height}")
         root.resizable(width=False, height=False)
+        root.focus()
         root.title("New Game")
         root.wm_attributes("-topmost", 1)
         self.new_game_page = Frame(root)
@@ -124,30 +126,31 @@ class View:
         start_game_but.pack(side = "left")
 
     def create_new_user_page(self):
-        height = 600
-        width = 400
+        height = 60
+        width = 450
+        padx = pady = 5
         root = Toplevel()
         root.geometry(f"{width}x{height}")
+        root.resizable(width=False, height=False)
         root.title("Add new user")
         root.wm_attributes("-topmost", 1)
+        root.focus()
         self.new_user_page = Frame(root, height=height, width=width)
-        self.new_user_page.pack()
+        self.new_user_page.pack(padx=padx,pady=pady)
 
         font = Font(family='Helvetica', size=15, weight='bold')
+
+        # user label
         new_user_label = Label(self.new_user_page,text = 'Enter new user name:',font = font)
-        new_user_label.pack(side = LEFT)
+        new_user_label.grid(row=0,column=0,padx=padx,sticky = W)
+        # user entry
         self.new_user_entry_str = StringVar()
         new_user_entry = Entry(self.new_user_page, textvariable=self.new_user_entry_str)
-        new_user_entry.pack(side = LEFT)
+        new_user_entry.grid(row=0, column=1,padx=padx,sticky = W)
+        # add button
         add_button = Button(self.new_user_page, text="Add",command=self.controller.insert_new_user_clicked,font = font)
-        add_button.pack(side = LEFT)
-        self.new_user_add_error_label_str = StringVar()
-        new_user_add_error_label = Label(self.new_user_page,textvariable = self.new_user_add_error_label_str,font = font,fg = "red")
-        new_user_add_error_label.pack(side = BOTTOM,anchor=W)
+        add_button.grid(row=0, column=2,padx=padx,sticky = W)
 
-    def create_report(self):
-        pass
-    
     def create_game_board_page(self, game_data_grid, text_message):
         root = Toplevel()
         root.title("Game Board")
@@ -163,7 +166,6 @@ class View:
         message_label.pack()
 
         # grid canvas
-        #self.game_board_canvas = Canvas(root, height=canvas_height, width=canvas_width)
         self.game_board_canvas = Canvas(root)
         self.game_board_canvas.bind("<Configure>", self.controller.on_resize)
         self.game_board_canvas.pack_propagate(0)
@@ -179,8 +181,6 @@ class View:
 
     # redraw the game board by the game data grid
     def redraw_game_board(self, game_data_grid, text_message):
-        #self.game_board_canvas.delete("all")
-
         # update message
         self.game_board_message.set(text_message)
 
@@ -231,6 +231,48 @@ class View:
             points = [x1, y2, x2, y2, ((x1 + x2) / 2), y1]
             self.game_board_canvas.create_polygon(points, fill=color)
 
-
+    # show error message
     def show_error(self,error_msg):
         messagebox.showerror("Error", error_msg)
+
+    # show success message
+    def show_confirmation(self,msg):
+        messagebox.showinfo("Success", msg)
+
+    # show the wins report
+    def show_report(self, users_wins_list):
+        root = Toplevel()
+        root.wm_attributes("-topmost", 1)
+        root.focus()
+        root.title("Wins Report")
+
+        # create scroll bar
+        tabble_scroll = Scrollbar(root)
+        tabble_scroll.pack(side=RIGHT,fill="y")
+        table = Treeview(root,yscrollcommand=tabble_scroll.set)
+        table.pack()
+        tabble_scroll.config(command=table.yview)
+        root.resizable(width=False, height=False)
+
+        # set text fonts in table
+        header_font = Font(family='Helvetica', size=15,weight='bold')
+        values_font = Font(family='Helvetica', size=15)
+        style = Style()
+        style.configure("Treeview", font=values_font)
+        style.configure("Treeview.Heading", font=header_font)
+
+        # add data and column headers
+        table["columns"] = ("1", "2", "3")
+        table['show'] = 'headings'
+
+        table.column("1", width=50, anchor='c')
+        table.column("2", width=90, anchor='sw')
+        table.column("3", width=90, anchor='sw')
+
+        table.heading("1", text="#")
+        table.heading("2", text="User")
+        table.heading("3", text="Wins")
+
+        for count,user in enumerate(users_wins_list):
+            table.insert("", 'end', text="L1",
+                        values=(count+1, user[0], user[1]))

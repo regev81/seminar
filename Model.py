@@ -71,6 +71,7 @@ class Model:
 
         return False
 
+    # perform step of a player
     def move(self, row, col):
 
         # check if move is legal
@@ -86,15 +87,23 @@ class Model:
             # update turn
             self.switch_player()
 
+    # activate steps when a player wins the game
+    def activate_win_state(self,player):
+        self.game_state = GameState.OVER.value
+        if player.name == self.player1.name:
+            self.game_result = GameResult.PLAYER1_WIN.value
+        else:
+            self.game_result = GameResult.PLAYER2_WIN.value
+
+        self.game_board_message = f"{player.name} is the winner !!"
+        FileHandler.add_win_to_user(player.name)
+
+    # update the game state by the current state
     def update_game_state(self):
         if self.is_winner(self.player1):
-            self.game_state = GameState.OVER.value
-            self.game_result = GameResult.PLAYER1_WIN.value
-            self.game_board_message = f"{self.player1.name} is the winner !!"
+            self.activate_win_state(self.player1)
         elif self.is_winner(self.player2):
-            self.game_state = GameState.OVER.value
-            self.game_result = GameResult.PLAYER2_WIN.value
-            self.game_board_message = f"{self.player2.name} is the winner !!"
+            self.activate_win_state(self.player2)
         elif self.is_full():
             self.game_state = GameState.OVER.value
             self.game_result = GameResult.DRAW.value

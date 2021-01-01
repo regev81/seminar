@@ -1,5 +1,3 @@
-from Constants import *
-
 
 class GameMemento:
 

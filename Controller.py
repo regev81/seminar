@@ -1,3 +1,4 @@
+import operator
 from GameCaretaker import *
 from GameMemento import *
 from Model import *
@@ -15,6 +16,7 @@ class Controller:
     def main(self):
         self.view.main()
 
+    # start new game - open the page to select players details
     def new_game_clicked(self):
         # dont start new game if a previous game is still running
         if self.model.game_state == GameState.ACTIVE.value or self.model.game_state == GameState.CHOOSE_PLAYERS_DETAILS.value:
@@ -25,12 +27,17 @@ class Controller:
         users_from_file = list(userswins_from_file.keys())
         self.view.create_new_game_page(users_from_file)
 
+    # open page to add new user to the file
     def add_new_user_clicked(self):
         self.view.create_new_user_page()
 
+    # show the wins report from the file
     def generate_report_clicked(self):
-        pass
+        users_wins = FileHandler.get_all_users_and_wins()
+        sort_users_wins = sorted(users_wins.items(), key=operator.itemgetter(1), reverse=True)
+        self.view.show_report(sort_users_wins)
 
+    # open the game boars and start the game
     def start_game_clicked(self,root):
         # create player 1
         player1_name = self.view.player1_name_combo.get()
@@ -67,17 +74,19 @@ class Controller:
         self.care_taker = GameCaretaker()
         self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
 
+    # redraw the game boars when window resize
     def on_resize(self,event):
         self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
 
+    # perform when cell clicked on game board
     def cell_clicked(self,event):
         if self.view.game_board_canvas.find_withtag(CURRENT) and self.model.game_state == GameState.ACTIVE.value:
             tag = self.view.game_board_canvas.itemcget(CURRENT, "tags")
             row_column = re.split(',| ', tag)
-            # row_column = tag.split(sep=',')
             row = int(row_column[0])
             column = int(row_column[1])
 
+            # perform the player move and add create memento and add it
             self.model.move(row,column)
             self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
             self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
@@ -101,8 +110,11 @@ class Controller:
     # insert new user to the file (if the user name is valid)
     def insert_new_user_clicked(self):
         name_entered = self.view.new_user_entry_str.get()
-        if FileHandler.user_name_exists_in_file(name_entered):
-            self.view.new_user_add_error_label_str.set(Error.USER_EXISTS.value)
+        if not name_entered or name_entered.count(' ') == len(name_entered):  # empty string or all spaces string
+            self.view.show_error(Error.EMPTY_NAME.value)
+        elif FileHandler.user_name_exists_in_file(name_entered):
+            self.view.show_error(Error.USER_EXISTS.value)
         else:
             FileHandler.add_new_user_to_file(name_entered)
-            self.view.new_user_add_error_label_str.set(f"User {name_entered} successfully added to file")
+            #self.view.new_user_add_error_label_str.set(f"User {name_entered} successfully added to file")
+            self.view.show_confirmation(f"User {name_entered} successfully added to file")
