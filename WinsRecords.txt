@@ -14,3 +14,7 @@ s
 7
 Tzuf
 6
+Gal
+0
+HFD
+0

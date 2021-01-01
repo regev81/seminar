@@ -27,9 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0faaf4-4c2b-4046-92a1-3149d8a3ca59" name="Default Changelist" comment="שערשעכגע">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View.py" beforeDir="false" afterPath="$PROJECT_DIR$/View.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WinsRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WinsRecords.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -294,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608974994621</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="שערשעכגע">
+      <created>1609404492782</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609404492782</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,9 +325,9 @@
     <MESSAGE value="add wins records file" />
     <MESSAGE value="bla" />
     <MESSAGE value="add enums" />
-    <MESSAGE value="שערשעכגע" />
     <MESSAGE value="new project" />
-    <option name="LAST_COMMIT_MESSAGE" value="new project" />
+    <MESSAGE value="שערשעכגע" />
+    <option name="LAST_COMMIT_MESSAGE" value="שערשעכגע" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
