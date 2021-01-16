@@ -91,14 +91,17 @@ class View:
         # shape
         player1_shape_label = Label(player1_labelframe, text="Shape:", font=lable_font).grid(row = 1, column = 0)
         self.player1_shape_combo = Combobox(player1_labelframe, values=shapes, font=combo_font)
+        self.player1_shape_combo.current(0)
         self.player1_shape_combo.grid(row = 1, column = 1)
         # color
         player1_color_label = Label(player1_labelframe, text="Color:", font=lable_font).grid(row = 2, column = 0)
         self.player1_color_combo = Combobox(player1_labelframe, values=colors, font=combo_font)
+        self.player1_color_combo.current(0)
         self.player1_color_combo.grid(row = 2, column = 1)
         # size
         player1_shape_label = Label(player1_labelframe, text="Size:", font=lable_font).grid(row = 3, column = 0)
         self.player1_size_combo = Combobox(player1_labelframe, values=sizes, font=combo_font)
+        self.player1_size_combo.current(0)
         self.player1_size_combo.grid(row = 3, column = 1)
 
         ### second labelframe
@@ -111,14 +114,17 @@ class View:
         # shape
         player2_shape_label = Label(player2_labelframe, text="Shape:", font=lable_font).grid(row = 1, column = 0)
         self.player2_shape_combo = Combobox(player2_labelframe, values=shapes, font=combo_font)
+        self.player2_shape_combo.current(1)
         self.player2_shape_combo.grid(row = 1, column = 1)
         # color
         player2_color_label = Label(player2_labelframe, text="Color:", font=lable_font).grid(row = 2, column = 0)
         self.player2_color_combo = Combobox(player2_labelframe, values=colors, font=combo_font)
+        self.player2_color_combo.current(1)
         self.player2_color_combo.grid(row = 2, column = 1)
         # size
         player2_shape_label = Label(player2_labelframe, text="Size:", font=lable_font).grid(row = 3, column = 0)
         self.player2_size_combo = Combobox(player2_labelframe, values=sizes, font=combo_font)
+        self.player2_size_combo.current(1)
         self.player2_size_combo.grid(row = 3, column = 1)
 
         # start game button
@@ -158,6 +164,7 @@ class View:
         height = 510
         width = 500
         root.geometry(f"{width}x{height}")
+        root.protocol("WM_DELETE_WINDOW", lambda: self.controller.on_closing_gameboard(root))
 
         # top message label
         font = Font(family='Helvetica', size=15, weight='bold')
@@ -167,7 +174,7 @@ class View:
 
         # grid canvas
         self.game_board_canvas = Canvas(root)
-        self.game_board_canvas.bind("<Configure>", self.controller.on_resize)
+        self.game_board_canvas.bind("<Configure>", self.controller.on_resize_gameboard)
         self.game_board_canvas.pack_propagate(0)
         self.game_board_canvas.pack(expand=TRUE, fill=BOTH)
 
@@ -203,7 +210,7 @@ class View:
                 player = game_data_grid[row,column]
 
                 # create the shape inside the grid cell if necessary
-                if(player != None):
+                if player != None:
                     self.draw_shape(player,x1,y1,cellwidth,cellheight)
 
     # draw the shape (RECTANGLE/CIRCLE/TRIANGLE) in the correct cell by the player details on the game board

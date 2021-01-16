@@ -4,6 +4,7 @@ from GameMemento import *
 from Model import *
 from Player import *
 from View import *
+import re
 
 
 class Controller:
@@ -74,15 +75,20 @@ class Controller:
         self.care_taker = GameCaretaker()
         self.care_taker.add_memento(GameMemento(self.model.game_data_grid))
 
-    # redraw the game boars when window resize
-    def on_resize(self,event):
+    # redraw the game board when window resize
+    def on_resize_gameboard(self, event):
         self.view.redraw_game_board(self.model.game_data_grid,self.model.game_board_message)
+
+    # change game_state when game board close
+    def on_closing_gameboard(self, root):
+        self.model.game_state = GameState.INACTIVE.value
+        root.destroy()
 
     # perform when cell clicked on game board
     def cell_clicked(self,event):
         if self.view.game_board_canvas.find_withtag(CURRENT) and self.model.game_state == GameState.ACTIVE.value:
             tag = self.view.game_board_canvas.itemcget(CURRENT, "tags")
-            row_column = re.split(',| ', tag)
+            row_column = re.split(',| ',tag)
             row = int(row_column[0])
             column = int(row_column[1])
 
